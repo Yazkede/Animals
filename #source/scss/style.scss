@@ -1,0 +1,463 @@
+// Файл обнуляющих стилей========================================================================================================================
+@import "nullstyle.scss";
+
+//подключаем шрифты==============================================================================================================================
+@font-face {
+	font-family: 'georgia';
+	src: url('/fonts/georgia.eot');
+	src: local('☺'), url('/fonts/georgia.woff') format('woff'), url('/fonts/georgia.ttf') format('truetype'), url('/fonts/georgia.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'georgia';
+	src: url('/fonts/georgiai.eot');
+	src: local('☺'), url('/fonts/georgiai.woff') format('woff'), url('/fonts/georgiai.ttf') format('truetype'), url('/fonts/georgiai.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'georgia';
+	src: url('/fonts/georgiab.eot');
+	src: local('☺'), url('/fonts/georgiab.woff') format('woff'), url('/fonts/georgiab.ttf') format('truetype'), url('/fonts/georgiab.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+//<МИКСИНЫ>======================================================================================================================================
+@import "mixins.scss";
+
+//подключаем файлы стилей========================================================================================================================
+@import "header.scss";
+@import "footer.scss";
+
+//основная сетка=================================================================================================================================
+
+body.lock{
+	overflow: hidden;
+}
+
+.wrapper{
+	background-color: #313131;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.container{
+	max-width: 96%;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+
+//контент==============================================================================================================================
+
+.content {
+
+	&__subtitle {
+		font-family: 'georgia';
+		font-size: 22px;
+		line-height: 30px;
+		font-weight: 400;
+		font-style: italic;
+		color: #666666;
+		max-width: 728px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 43px 0 40px 0;
+	}
+
+	&__columns {
+		display: flex;
+		justify-content: space-around;
+		flex: 0 1 33.333%;
+	}
+}
+.column {
+	padding: 0 30px;
+	margin: 115px 10px;
+
+
+	&__left {
+		padding: 0 0 0 40px;
+	}
+
+	&__left-title {
+		font-family: 'georgia';
+		font-size: 22px;
+		line-height: 26px;
+		font-weight: 400;
+		color: #666666;
+	}
+
+	&__left-image {
+		padding-top: 34px;
+		max-width: 100%;
+	}
+
+	&__left-image img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__left-text {
+		padding-top: 30px;
+		font-family: 'georgia';
+		font-size: 13px;
+		line-height: 18px;
+		font-weight: 400;
+		color: #999999;
+		max-width: 276px;
+		p{
+			padding-top: 15px;
+		}
+	}
+
+	&__left-link {
+		padding-top: 21px;
+		float: right;
+		a{
+			font-family: 'georgia';
+			font-size: 13px;
+			line-height: 13px;
+			font-weight: 400;
+			color: #a7c353;
+		}
+	}
+
+	&__center {
+		padding: 0 30px;
+	}
+
+	&__center-title {
+		font-family: 'georgia';
+		font-size: 22px;
+		line-height: 26px;
+		font-weight: 400;
+		color: #666666;
+	}
+
+	&__center-row {
+		display: flex;
+	}
+
+	&__center-image {
+		padding-top: 32px;
+		max-width: 100%;
+	}
+
+	&__center-subtitle {
+		padding: 35px 0 0 18px;
+		font-family: 'georgia';
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 700;
+		color: #878787;
+	}
+
+	&__center-text {
+		padding: 13px 0 0 18px;
+		max-width: 218px;
+		font-family: 'georgia';
+		font-size: 13px;
+		line-height: 18px;
+		font-weight: 400;
+		color: #868686;
+	}
+
+	&__center-link {
+		padding-top: 14px;
+		float: right;
+		a{
+			font-family: 'georgia';
+			font-size: 13px;
+			line-height: 13px;
+			font-weight: 400;
+			color: #a7c353;
+		}
+	}
+
+	&__right {
+		padding: 0 30px 0 0;
+	}
+
+	&__right-title {
+		font-family: 'georgia';
+		font-size: 22px;
+		line-height: 26px;
+		font-weight: 400;
+		color: #666666;
+	}
+
+	&__right-block {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__right-row{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	&__right-icon {
+		padding-top: 15px;
+	}
+
+	&__right-subtitle {
+		max-width: 189px;
+		padding: 30px 0 0 11px;
+		font-family: 'georgia';
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: 700;
+		color: #989898;
+		span{
+			font-family: 'georgia';
+			font-size: 16px;
+			line-height: 19px;
+			font-weight: 400;
+			color: #989898;
+		}
+	}
+
+	&__right-text {
+		padding-top: 24px;
+		max-width: 273px;
+		font-family: 'georgia';
+		font-size: 13px;
+		line-height: 18px;
+		font-weight: 400;
+		color: #888888;
+	}
+
+	&__right-link {
+		display: flex;
+		justify-content: flex-end;
+		a{
+			font-family: 'georgia';
+			font-size: 13px;
+			line-height: 13px;
+			font-weight: 400;
+			color: #a7c353;
+			
+		}
+	}
+}
+
+//слайдер================================================================================================================
+
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: center;
+}
+
+/* Конкретный слайдер */
+.photo_slider {
+   min-height: 700px;
+	}
+
+.slider{
+   padding:15px 0 0 100px;
+}
+
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -30px auto;
+	z-index: 10;
+	font-size: 0;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	border: 2px solid #a7c353;
+	
+}
+
+.slider .slick-arrow.slick-prev{
+	left: 26%;
+	background: #000000 url('/img/slider/arrows/left_arrow_113.png') 14px 9px / 35% no-repeat;
+	
+}
+.slider .slick-arrow.slick-next{
+	right: 26%;
+	background: #000000 url('/img/slider/arrows/right_arrow_110.png') 16px 9px / 35% no-repeat ;
+	
+}
+.slider .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+.slider .slick-dots{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:20px 0;
+	
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0px 5px;
+}
+.slider .slick-dots button{
+	font-size: 0;
+	width: 16px;
+	height: 15px;
+	background-color: #a7c353;
+	border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button{
+	background-color: transparent;
+	border: 2px solid #a7c353;
+}
+
+.slider .slick-dots:after{
+	content: '';
+	position: absolute;
+	overflow: hidden;
+	max-width: 950px;
+	width: 85%;
+	height: 1px;
+	background-color: #e2e2e2;
+	margin: 85px 0 0 0;
+}
+
+.slider__item {
+	padding: 0px 15px;
+}
+.slider__item img{
+	max-width: 100%;
+}
+
+.slider {
+
+	&__title {
+		position: absolute;
+		top: 52.5%;
+		right: 28%;
+		text-align: center;
+		padding: 7px 23px 0 23px;
+		max-width: 350px;
+		height: 40px;
+		background-color: #a7c353;
+		font-family: 'georgia';
+		font-size: 22px;
+		line-height: 30px;
+		font-weight: 400;
+		color: #ffffff;
+	}
+
+	&__text {
+		position: absolute;
+		top: 57.5%;
+		right: 28%;
+		padding: 14px 13px 0 13px;
+		max-width: 350px;
+		height: 68px;
+		background-color: #ffffff;
+		font-family: 'georgia';
+		font-size: 13px;
+		line-height: 15px;
+		letter-spacing: 0.5px;
+		color: #999999;
+	}
+}
+
+
+//адаптив===================================================================================================
+
+@media (max-width:992px){
+	.container{
+		max-width: 96%;
+	}
+	.menu__list a{
+		font-size: 12px;
+		margin: 0 2px;
+	}
+	.column{
+		&__left{
+			padding: 0 0 0 30px;
+		}
+		&__center{
+			padding: 0 30px;
+		}
+		&__right{
+			padding: 0 30px 0 0;
+		}
+	}
+	.content__subtitle{
+		position: relative;
+		top: 0;
+		font-size: 20px;
+		padding: 20px 20px;
+	}
+
+	.slider{
+		padding: 15px 40px 0 40px;
+		
+	}
+	
+	.column{
+		&__left-image{
+			padding: 15px 0 0 0;
+		}
+
+		&__center-subtitle{
+			padding: 10px 20px;
+		}
+		&__center-image{
+			padding: 15px 0;
+		}
+		&__center-text{
+			padding: 0 10px;
+		}
+	}
+	.slider .slick-arrow.slick-prev{
+		left: 9%;
+		margin-top: 15px;
+	}
+	.slider .slick-arrow.slick-next{
+		right: 9%;
+		margin-top: 15px;
+	}
+	.slider {
+		&__title, 
+		&__text{
+			display: none;
+		}
+	}
+}
+
+@media (max-width:767px){
+	.content__subtitle{
+		position: relative;
+		top: 50px;
+		font-size: 16px;
+		padding: 40px 25px;
+	}
+
+	.content__columns {
+		flex-direction: column;	
+		align-items: center;
+	}
+
+	.column{
+		&__center{
+			padding: 40px 0;
+		}
+
+		&__right{
+			padding: 20px 0;
+		}
+	}
+}
