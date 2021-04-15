@@ -1,5 +1,5 @@
 .in-icon {
-  background-image: url("/img/spr.jpg");
+  background-image: url("img/spr.jpg");
   background-repeat: no-repeat;
   height: 32px;
   width: 32px;
@@ -17,7 +17,7 @@
     transition: all 0.5s; }
 
 .twit-icon {
-  background-image: url("/img/spr.jpg");
+  background-image: url("img/spr.jpg");
   background-repeat: no-repeat;
   height: 32px;
   width: 32px;
@@ -36,7 +36,7 @@
     transition: all 0.5s; }
 
 .pint-icon {
-  background-image: url("/img/spr.jpg");
+  background-image: url("img/spr.jpg");
   background-repeat: no-repeat;
   height: 32px;
   width: 32px;
@@ -55,7 +55,7 @@
     transition: all 0.5s; }
 
 .rss-icon {
-  background-image: url("/img/spr.jpg");
+  background-image: url("img/spr.jpg");
   background-repeat: no-repeat;
   height: 32px;
   width: 32px;
