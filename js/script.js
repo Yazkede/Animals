@@ -18,23 +18,21 @@ $(document).ready(function () {
       autoplaySpeed: 1500,
       responsive: [
          {
+            breakpoint: 1199,
+            settings: {
+               arrows: false,
+            }
+         },
+         {
             breakpoint: 768,
             settings: {
                slidesToShow: 2,
-               arrows: false,
             }
          },
          {
             breakpoint: 550,
             settings: {
                slidesToShow: 1,
-               arrows: false,
-            }
-         },
-         {
-            breakpoint: 1199,
-            settings: {
-               arrows: false,
             }
          }
       ]
