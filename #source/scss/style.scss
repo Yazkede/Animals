@@ -65,7 +65,7 @@ body.lock{
 		max-width: 728px;
 		text-align: center;
 		margin: 0 auto;
-		padding: 43px 0 40px 0;
+		padding: 43px 0 0 0;
 	}
 
 	&__columns {
@@ -247,6 +247,29 @@ body.lock{
 	}
 }
 
+
+#okno {
+   width: 300px;
+   height: 50px;
+   text-align: center;
+   padding: 15px;
+   border: 3px solid #0000cc;
+   border-radius: 10px;
+   color: #0000cc;
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+   }
+      
+#okno:target {
+	display: block;
+}
+
+
 //слайдер================================================================================================================
 
 .slick-slider{
@@ -268,12 +291,12 @@ body.lock{
 	}
 
 .slider{
-   padding:15px 0 0 100px;
+   padding:45px 0 0 100px;
 }
 
 .slider .slick-arrow{
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	margin: -30px auto;
 	z-index: 10;
 	font-size: 0;
@@ -342,7 +365,7 @@ body.lock{
 	&__title {
 		display: block;
 		position: absolute;
-		top: 52.5%;
+		top: 48.5%;
 		right: 28%;
 		text-align: center;
 		padding: 7px 23px 0 23px;
@@ -359,7 +382,7 @@ body.lock{
 	&__text {
 		display: block;
 		position: absolute;
-		top: 57.5%;
+		top: 53.5%;
 		right: 28%;
 		padding: 14px 13px 0 13px;
 		max-width: 350px;
