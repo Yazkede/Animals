@@ -281,7 +281,7 @@ body.lock{
 	height: 48px;
 	border-radius: 50%;
 	border: 2px solid #a7c353;
-	
+	display: block;
 }
 
 .slider .slick-arrow.slick-prev{
@@ -414,7 +414,6 @@ body.lock{
 
 	.slider{
 		padding: 15px 40px 0 40px;
-		
 	}
 	
 	.column{
@@ -456,5 +455,8 @@ body.lock{
 		&__right{
 			padding: 20px 0;
 		}
+	}
+	.slider .slick-arrow{
+		display: none;
 	}
 }

@@ -26,15 +26,15 @@ $(document).ready(function () {
          {
             breakpoint: 768,
             settings: {
-               slidesToShow: 2,
                arrows: false,
+               slidesToShow: 2
             }
          },
          {
             breakpoint: 550,
             settings: {
-               slidesToShow: 1,
                arrows: false,
+               slidesToShow: 1
             }
          }
       ]
